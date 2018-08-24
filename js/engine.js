@@ -26,7 +26,7 @@ var Engine = (function(global) {
 
     let id;
     const modal = document.getElementById('modal');
-    //const replay = document.getElementsByClassName('modal-button');
+    const replay = document.querySelector('.modal-button');
 
 
     canvas.width = 505;
@@ -66,7 +66,15 @@ var Engine = (function(global) {
             console.log('win');
          }else {
            id = win.requestAnimationFrame(main);
-    }}
+    }
+
+        replay.addEventListener('click', function(){
+          modal.classList.toggle('hide');
+          player.reset();
+          player.winner = false;
+          win.requestAnimationFrame(main);
+        });
+  }
 
     /* This function does some initial setup that should only occur once,
      * particularly setting the lastTime variable that is required for the
