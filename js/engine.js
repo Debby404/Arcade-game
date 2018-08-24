@@ -24,6 +24,9 @@ var Engine = (function(global) {
         ctx = canvas.getContext('2d'),
         lastTime;
 
+    let id;
+
+
     canvas.width = 505;
     canvas.height = 606;
     doc.body.appendChild(canvas);
@@ -55,11 +58,11 @@ var Engine = (function(global) {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
-         // if (player.winner === true) {
-         //   console.log("done");
-         // }
-         win.requestAnimationFrame(main);
-    }
+         if (player.winner === true) {
+            win.cancelAnimationFrame(id);
+         }else {
+           id = win.requestAnimationFrame(main);
+    }}
 
     /* This function does some initial setup that should only occur once,
      * particularly setting the lastTime variable that is required for the
