@@ -59,7 +59,7 @@ class Player extends Entity{
     //check if player won
     if(this.y === 0){
       this.winner = true;
-      console.log("yippy");
+      alert("yay");
     }
   }
 
