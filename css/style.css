@@ -1,3 +1,30 @@
 body {
     text-align: center;
 }
+
+#modal {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  margin-top: -220px;
+  left: 37%;
+  background: white;
+  transform: translate(2%, 180%);
+}
+
+button {
+  background: lightgrey;
+  /* margin-top: 50px; */
+  height: 25px;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 25px;
+  padding-top: 35px;
+  font-family: monospace;
+}
+
+.hide {
+  display: none;
+}

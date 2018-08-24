@@ -25,6 +25,8 @@ var Engine = (function(global) {
         lastTime;
 
     let id;
+    const modal = document.getElementById('modal');
+    //const replay = document.getElementsByClassName('modal-button');
 
 
     canvas.width = 505;
@@ -60,6 +62,8 @@ var Engine = (function(global) {
          */
          if (player.winner === true) {
             win.cancelAnimationFrame(id);
+            modal.classList.toggle('hide');
+            console.log('win');
          }else {
            id = win.requestAnimationFrame(main);
     }}
