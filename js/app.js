@@ -32,9 +32,9 @@ Enemy.prototype.render = function() {
 // Player.handleInput() method. You don't need to modify this.
 
 const player = new Player();
-const bug1 = new Enemy((-101 * 3), 83, 150);
-const bug2 = new Enemy(-101, 83, 150);
-const bug3 = new Enemy(-101, 166, 120);
+const bug1 = new Enemy((-101 * 3), 166, 160);
+const bug2 = new Enemy(-101, 83, 185);
+const bug3 = new Enemy(-101, 166, 160);
 const allEnemies = [];
 allEnemies.push(bug1, bug2, bug3);
 
