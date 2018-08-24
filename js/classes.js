@@ -78,3 +78,5 @@ var Enemy = function(x, y, speed) {
     this.boundary = this.step * 5;
     this.reset = -this.step;
 };
+
+// *This code is inspired and encouraged by the tutorial of Matthew Cranford! Lots of credit to him!

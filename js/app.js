@@ -48,3 +48,5 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+// *This code is inspired and encouraged by the tutorial of Matthew Cranford! Lots of credit to him!

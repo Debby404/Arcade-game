@@ -201,3 +201,5 @@ var Engine = (function(global) {
      */
     global.ctx = ctx;
 })(this);
+
+// *This code is inspired and encouraged by the tutorial of Matthew Cranford! Lots of credit to him!

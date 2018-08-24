@@ -6,3 +6,6 @@ You can try over to get to the water.
 Once you succeed, you will see an announcment of Game over.
 You can exit the game or hit the replay button to start over!
 Have fun!
+
+
+<!-- *This code is inspired and encouraged by the tutorial of Matthew Cranford! Lots of credit to him! -->
