@@ -8,6 +8,7 @@ class Entity{
   }
 }
 
+// Now write your own player class
 //create player
 class Player extends Entity{
   constructor(){
@@ -63,12 +64,13 @@ class Player extends Entity{
     }
   }
 
+    //reset game
   reset(){
     this.x = this.startX;
     this.y = this.startY;
   }
 }
-
+    //enemy setup
 var Enemy = function(x, y, speed) {
     this.x = x;
     this.y = y;

@@ -24,8 +24,11 @@ var Engine = (function(global) {
         ctx = canvas.getContext('2d'),
         lastTime;
 
+    //requestAnimationFrame for win
     let id;
+    //create winning modal
     const modal = document.getElementById('modal');
+    //setup replay after winning
     const replay = document.querySelector('.modal-button');
 
 
@@ -201,5 +204,3 @@ var Engine = (function(global) {
      */
     global.ctx = ctx;
 })(this);
-
-// *This code is inspired and encouraged by the tutorial of Matthew Cranford! Lots of credit to him!
